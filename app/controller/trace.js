@@ -14,7 +14,7 @@ class ScreenShotController extends Controller {
     });
     const page = await browser.newPage();
     await page.tracing.start({ path: './data/trace.json' })
-    await page.goto('https://www.ppmoney.com')
+    await page.goto('https://juejin.im/timeline')
     await page.tracing.stop()
 
     await browser.close();
